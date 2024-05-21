@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ascii-Art-Web</title>
+</head>
+<body>
+    <form method="POST" action="">
+        <label style="margin-left:20px;" for="text">Entrez votre texte :</label>
+        <textarea style="display:block;margin-left:20px;"
+            id="text" name="text" rows="10" cols="50" autofocus>
+        </textarea>
+        <div style="margin-top:10px;margin-left:20px;">
+            <input type="radio" name="format" id="format1" value="standard" checked>
+            <label for="format1">Standard</label>
+            <input type="radio" name="format" id="format2" value="shadow">
+            <label for="format2">Shadow</label>
+            <input type="radio" name="format" id="format3" value="thinkertoy">
+            <label for="format3">Thinkertoy</label>
+        </div>
+        <input style="margin-top:10px;margin-left:20px;" type="submit" value="Générer Le texte">
+    </form>
+    <div id="result" style="margin:20px;">
+		<div id="title"><b>Texte formaté :</b></div><br />
+		<textarea style="width:100%;height:300px;">{{.}}</textarea>
+    </div>
+</body>
+</html>
